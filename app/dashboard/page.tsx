@@ -1,5 +1,4 @@
 import { cookies } from "next/headers";
-import TestChatButton from "@/components/TestChatButton";
 import ChatDrawer from "@/components/ChatDrawer";
 
 export default async function Dashboard() {
@@ -15,12 +14,18 @@ export default async function Dashboard() {
     <>
       <main className="p-8">
         <h1 className="text-3xl font-bold">
-          Salesforce AI Agent Dashboard
+          Dashboard
         </h1>
 
-        <div className="mt-6 space-y-4">
+
+        <p className="mt-4">
+          Salesforce AI Agent Dashboard
+        </p>
+      </main>
+
+      <div className="mt-6 space-y-4">
           <p>
-            Connected Status:{" "}
+            Connected:{" "}
             {accessToken
               ? "✅ Yes"
               : "❌ No"}
@@ -31,9 +36,7 @@ export default async function Dashboard() {
             {instanceUrl ??
               "Not Available"}
           </p>
-
-        </div>
-      </main>
+      </div>
 
       <ChatDrawer />
     </>
