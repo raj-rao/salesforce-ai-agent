@@ -55,7 +55,8 @@ export async function GET(request: NextRequest) {
     }
 
     const response = NextResponse.redirect(
-      new URL("/dashboard", request.url)
+      //new URL("/dashboard", request.url)
+      new URL("/", request.url)
     );
 
     response.cookies.set("sf_access_token", tokenData.access_token, {
