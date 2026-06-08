@@ -129,7 +129,7 @@ export default function ChatPanel({
 
       <div className="flex items-center justify-between border-b p-4">
         <h2 className="text-lg font-bold">
-          Salesforce Chat
+          Salesforce AI Agent
         </h2>
 
         <button
